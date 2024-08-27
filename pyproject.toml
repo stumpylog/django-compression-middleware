@@ -113,11 +113,11 @@ matrix.django.dependencies = [
   { if = ["5.1"], value = "Django>=5.1,<5.2" },
 ]
 
-[tool.hatch.envs.hatch-test.scripts]
-run = [
-    "pip list --verbose",
-    "pytest{env:HATCH_TEST_ARGS:} {args}"
-]
+# [tool.hatch.envs.hatch-test.scripts]
+# run = [
+#     "pip list --verbose",
+#     "pytest{env:HATCH_TEST_ARGS:} {args}"
+# ]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
